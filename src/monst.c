@@ -105,6 +105,19 @@ NEARDATA struct permonst mons[] = {
     /*
      * ants
      */
+    MON("fire beetle", S_ANT, LVL(1, 12, 4, 0, 0), (G_GENO | G_SGROUP | 3),
+        A(ATTK(AT_BITE, AD_PHYS, 2, 4), NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK,
+          NO_ATTK),
+        SIZ(200, 200, MS_SILENT, MZ_SMALL), 0, 0,
+        M1_ANIMAL | M1_NOHANDS | M1_OVIPAROUS | M1_CARNIVORE, M2_HOSTILE,
+        M3_INFRAVISIBLE, 2, CLR_ORANGE),
+    MON("bombardier beetle", S_ANT, LVL(2, 9, 4, 0, 0),
+        (G_GENO | G_SGROUP | 1),
+        A(ATTK(AT_BITE, AD_PHYS, 2, 6), ATTK(AT_SPIT, AD_ACID, 3, 4), NO_ATTK,
+          NO_ATTK, NO_ATTK, NO_ATTK),
+        SIZ(500, 400, MS_SILENT, MZ_SMALL), 0, 0,
+        M1_ANIMAL | M1_NOHANDS | M1_OVIPAROUS | M1_CARNIVORE | M1_POIS,
+        M2_HOSTILE, 0, 4, CLR_GREEN),
     MON("giant ant", S_ANT, LVL(2, 18, 3, 0, 0), (G_GENO | G_SGROUP | 3),
         A(ATTK(AT_BITE, AD_PHYS, 1, 4), NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK,
           NO_ATTK),
